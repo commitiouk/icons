@@ -14,7 +14,7 @@
     "svgo": "svgo --config ./svgo.config.js -f ./static/svg -o ./static/svg",
     "svgr": "svgr --typescript --title-prop --no-dimensions -d src/ -- ./static/svg",
     "storybook": "npm run clean && npm run prebuild:icons && start-storybook -p 6006",
-    "build-storybook": "npm run clean && npm run prebuild:icons && build-storybook -o docs-build",
+    "build-storybook": "npm run clean && npm run prebuild:icons && build-storybook -o storybook-static",
     "lint": "eslint components/ --fix"
   },
   "repository": {

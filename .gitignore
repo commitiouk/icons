@@ -2,6 +2,7 @@
 .idea
 .vscode
 .storybookout
+storybook-static
 src/icons
 src/
 dist/
