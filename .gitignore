@@ -1,0 +1,7 @@
+/node_modules
+.idea
+.vscode
+.storybookout
+src/icons
+src/
+dist/
