@@ -2,8 +2,8 @@ name: Build and Publish storybook to GitHub Pages
 
 on:
   push:
-    branches:
-      - "master"
+    paths:
+      - ["src/components/**", "static/**"]
 
 permissions:
   contents: read
