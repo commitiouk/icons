@@ -2,8 +2,7 @@ name: Build and Publish storybook to GitHub Pages
 
 on:
   push:
-    paths:
-      - ["src/components/**", "static/**"]
+    paths: ["src/components/**", "static/**"]
 
 permissions:
   contents: read
