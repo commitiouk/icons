@@ -3,6 +3,7 @@ import filesize from 'rollup-plugin-filesize';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default ['esm', 'cjs'].map((format = '') => ({
@@ -16,6 +17,7 @@ export default ['esm', 'cjs'].map((format = '') => ({
   plugins: [
     peerDepsExternal(),
     resolve(),
+    terser(),
     typescript({
       compilerOptions: {
         declarationDir: format === 'esm' ? 'dist/esm' : 'dist/cjs',
