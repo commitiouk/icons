@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Install dependencies 🏗
-        run: npm ci
+        run: npm install
 
       - name: Build 🚧👷
         run: npm run build
