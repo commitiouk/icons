@@ -21,7 +21,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@commitio'
         env:
-          NPM_TOKEN: ${{ secrets.COMMITIO_GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.COMMITIO_NPM_TOKEN }}
 
       - name: Install dependencies
         run: npm install
@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Release
+      - name: Semantic release
         env:
-          GITHUB_TOKEN: ${{ secrets.COMMITIO_GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.COMMITIO_NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.COMMITIO_NPM_TOKEN }}
         run: npx semantic-release
