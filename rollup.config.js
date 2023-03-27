@@ -24,10 +24,7 @@ export default ['esm', 'cjs'].map((format = '') => ({
         outDir: format === 'esm' ? 'dist/esm' : 'dist/cjs',
       },
     }),
-    babel({
-      babelHelpers: 'runtime',
-      plugins: ['@babel/plugin-transform-runtime'],
-    }),
+    babel(),
     filesize(),
   ].concat(format === 'cjs' ? commonjs() : []),
 }));
