@@ -23,6 +23,7 @@
     "url": "https://github.com/commitio/icons.git"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
