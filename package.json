@@ -18,7 +18,7 @@
     "lint": "eslint components/ --fix"
   },
   "private": false,
-  "repository": "https://gitlab.com/commitio/icons.git",
+  "repository": "https://github.com/commitio/icons.git",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
