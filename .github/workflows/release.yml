@@ -29,4 +29,5 @@ jobs:
       - name: Semantic release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.COMMITIO_NPM_TOKEN }}
         run: npx semantic-release
