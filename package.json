@@ -1,6 +1,6 @@
 {
   "name": "@commitio/icons",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "SVG Icons Library as React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.esm.js",
@@ -15,13 +15,14 @@
     "svgr": "svgr --typescript --title-prop --no-dimensions -d src/ -- ./static/svg",
     "storybook": "npm run clean && npm run prebuild:icons && start-storybook -p 6006",
     "build-storybook": "npm run clean && npm run prebuild:icons && build-storybook -o storybook-static",
-    "lint": "eslint components/ --fix"
+    "lint": "eslint components/ --fix",
+    "semantic-release": "semantic-release"
   },
   "private": false,
   "repository": "https://github.com/commitio/icons.git",
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "svg",
@@ -100,7 +101,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "styled-components": "^5.3.5",
     "svgo": "^2.8.0",
-    "typescript": "^4.5.0"
+    "typescript": "^4.5.0",
+    "semantic-release": "^21.0.0"
   },
   "peerDependencies": {
     "react": ">= 18.0"
