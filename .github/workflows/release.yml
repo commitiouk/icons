@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
           scope: "@commitiouk"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
