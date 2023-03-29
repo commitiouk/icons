@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Semantic Release
-        run: npm run semantic-release
+        run: npm run semantic-release --config release.config.js
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
