@@ -7,7 +7,17 @@ module.exports = {
         changelogFile: 'docs/CHANGELOG.md'
       }
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        prepare: [
+          {
+            path: '@semantic-release/npm',
+            npmPublish: false,
+          },
+        ],
+      },
+    ],
     '@semantic-release/github',
     [
       '@semantic-release/git',

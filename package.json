@@ -19,6 +19,7 @@
     "semantic-release": "semantic-release"
   },
   "publishConfig": {
+    "tag": "latest",
     "access": "public",
     "@commitiouk:registry": "https://registry.npmjs.org/"
   },
