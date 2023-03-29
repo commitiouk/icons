@@ -18,6 +18,9 @@
     "lint": "eslint components/ --fix",
     "semantic-release": "semantic-release"
   },
+  "publicConfig": {
+    "access": "public"
+  },
   "repository": "https://github.com/commitio/icons",
   "keywords": [
     "svg",
