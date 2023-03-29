@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@commitio'
+          registry-url: https://npm.pkg.github.com/
+          scope: "@commitio"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -31,6 +31,6 @@ jobs:
         run: npm run build
 
       - name: Semantic release
-        run: npx semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

@@ -1,5 +1,5 @@
 {
-  "name": "@commitio-org/icons",
+  "name": "@commitio/icons",
   "version": "0.0.0-development",
   "description": "SVG Icons Library as React components",
   "main": "dist/cjs/index.js",
@@ -20,7 +20,7 @@
   },
   "publicConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "@commitio:registry": "https://npm.pkg.github.com/"
   },
   "repository": "https://github.com/commitio/icons",
   "keywords": [
