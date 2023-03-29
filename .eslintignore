@@ -2,3 +2,5 @@ node_modules
 !.storybook
 dist/
 src/
+
+release.config.js
