@@ -25,8 +25,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Build project
-        run: npm run build
+      - name: Install & Build project
+        run: npm install && npm run build
 
       - name: Semantic release
         run: npm run semantic-release
