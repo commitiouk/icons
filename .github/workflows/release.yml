@@ -22,7 +22,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: "@commitio"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install dependencies
         run: npm install
