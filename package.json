@@ -20,7 +20,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "@commitiouk:registry": "https://registry.npmjs.org/"
   },
   "repository": "https://github.com/commitiouk/icons",
   "keywords": [
@@ -34,12 +34,12 @@
   "author": "oyelsv+commitio@gmail.com",
   "license": "ISC",
   "sideEffects": false,
-  "homepage": "https://github.com/commitio/icons",
+  "homepage": "https://github.com/commitiouk/icons",
   "browserslist": [
     "> 0.25%, not dead"
   ],
   "bugs": {
-    "url": "https://github.com/commitio/icons/issues"
+    "url": "https://github.com/commitiouk/icons/issues"
   },
   "husky": {
     "hooks": {
