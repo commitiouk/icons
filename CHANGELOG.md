@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/commitiouk/icons/compare/v1.2.14...v1.2.15) (2023-03-30)
+
+
+### Bug Fixes
+
+* **workflows:** fix gh actions w/ branch protection rules 1 ([4479345](https://github.com/commitiouk/icons/commit/44793457d400398169bc00bf63b02ef50d01d059))
+
 ## [1.2.14](https://github.com/commitiouk/icons/compare/v1.2.13...v1.2.14) (2023-03-30)
 
 
