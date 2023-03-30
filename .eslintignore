@@ -3,4 +3,3 @@ node_modules
 dist/
 src/
 
-release.config.js
