@@ -1,6 +1,6 @@
 {
   "name": "@commitiouk/icons",
-  "version": "0.0.0-development",
+  "version": "1.2.12",
   "description": "SVG Icons Library as React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.esm.js",
