@@ -7,6 +7,10 @@ on:
 
 jobs:
   build-and-publish:
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
